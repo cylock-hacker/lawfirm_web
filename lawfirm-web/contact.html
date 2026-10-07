@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GASHONGA | CONTACT-US - JusticeLaw-suit</title>
-        <link rel="stylesheet" href="../../dist/css/style.css">
+        <link rel="stylesheet" href="../dist/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
        <!-- <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script> -->
 </head>
@@ -24,10 +24,10 @@
                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                  <li class="nav-item"><a href="about.html" class="nav-link" >About</a></li>
                  <li class="nav-item"><a href="service.html" class="nav-link">services</a></li>
-                 <li class="nav-item"><a href="#contact.html" class="nav-link">contact </a></li>
+                 <li class="nav-item"><a href="contact.html" class="nav-link">contact </a></li>
                </ul>
            </div>
-          <button class="btn d-none d-lg-flex d-md-flex" id="btn-call">Get Consultation   <span><i class="fa-solid fa-arrow-right"></i></span></button>
+          <button class="btn d-none d-lg-flex d-md-flex" id="btn-call" onclick="window.location.href='#consultationform'">Get Consultation   <span><i class="fa-solid fa-arrow-right"></i></span></button>
     </div>     
    
 
@@ -91,7 +91,7 @@
     <div class="vr d-none d-lg-flex"></div>
 
     <section class="col-lg-5 p-4">
-      <form action="" method="post" class="form ">
+      <form action="" method="post" class="form " id="consultationform">
         <div class="mb-2">
             <h2>Send Us a Message</h2>
             <p>fill out the form below and we'll get <br> back you as soon as possible.Your information i safe with us</p>
@@ -142,7 +142,7 @@
     
 </main>
 
-<footer class="p-5">
+<footer class="p-5" id="footer-index">
     <div class="d-column d-lg-flex gap-3">
          <div class="d-flex align-items-center gap-3 col-lg-2 mt-3">
              <a href="#" id="logo"><i class="fa-solid fa-scale-balanced fs-2"></i></a>
@@ -158,18 +158,17 @@
             <li class="nav-item"> <a href="index.html" class="nav-link ">Home</a></li>
               <li class="nav-item"> <a href="about.html"  class="nav-link">About</a></li>
               <li class="nav-item"><a href="service.html" class="nav-link">services</a></li>
-             <li class="nav-item"> <a href="#contact.html" class="nav-link" >contact</a></li></li>
+             <li class="nav-item"> <a href="contact.html" class="nav-link" >contact</a></li></li>
            </ul>
         </div>
         <div class="vr d-none d-lg-flex text-secondary" ></div>
         <div class="col-lg-3 me-3 mt-3">
           <p class="text-secondary fw-bold small">FOLLOW US  <span> <i class="fa-solid fa-arrow-right"></i></span></p>
-          <div class="d-flex flex-row gap-4" id="">
-             <a href=""><span><i class="fa-brands fa-x-twitter text-white fs-4"></i></span></a>
-          <a href=""><span><i class="fa-brands fa-facebook-f text-white fs-4"></i></span></a>
-          <a href=""><span><i class="fa-brands fa-linkedin-in text-white fs-4"></i></span></a>
-          <a href=""><span><i class="fa-brands fa-instagram text-white fs-4"></i></span></a>
-   
+          <div class="d-flex flex-row gap-4" >
+             <a href="" id="linkicons"><span><i class="fa-brands fa-x-twitter text-white fs-4"></i></span></a>
+             <a href="" id="linkicons"><span><i class="fa-brands fa-facebook-f text-white fs-4"></i></span></a>
+             <a href="" id="linkicons"><span><i class="fa-brands fa-linkedin-in text-white fs-4"></i></span></a>
+             <a href="" id="linkicons"><span><i class="fa-brands fa-instagram text-white fs-4"></i></span></a>
           </div>
         </div>
         <div class="mt-4">

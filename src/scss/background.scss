@@ -1,0 +1,8 @@
+@import "mixin";
+
+#banner-service{@include background-attractor('../../pict/ladyjustice.png');}
+#banner-index{@include banner-background('../../pict/index-banner-image.png');}
+#welcome{@include banner-background('../../pict/practice-baackgroundimage.png')}
+#footer-index{@include background-attractor('../../pict/homepage-footer-background.png');}
+#Office{@include background-attractor('../../pict/ouroffice.png');}
+#our-story-image{@include background-attractor('../../pict/ouroffice.png');}

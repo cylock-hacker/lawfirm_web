@@ -1,0 +1,142 @@
+@import "variables";
+@import "mixin";
+
+.logo{
+    font-size: 45px;
+    color: $gold;
+}
+header{
+    background-color: $navy;
+}
+footer{
+    @extend header;
+}
+
+#btn-call{
+     background-color: $gold;
+}
+#call-to-free-consultation{
+    @extend #btn-call;
+}
+#btn-submit{
+     @extend #btn-call;
+     
+
+}
+#line{
+    @include shape(4rem, 1px, $gold);
+ 
+}
+
+
+#line-office{
+    width: 5rem;
+    background-color: $gold;
+}
+#logo{
+    color: $gold;
+}
+
+#contact-welcome{ 
+     @extend #logo;
+
+}
+
+#welcome-service{
+     @extend #contact-welcome;}
+#textarea{
+    resize: none;
+}
+#home-card{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: $navy;
+     @extend #logo;
+     margin-bottom: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+
+}
+#home-card-container{
+    @include alignment-justify(grid, center);
+}
+
+#footer-head{@extend #logo;}
+#card-grid{@include alignment-justify(grid, center);}
+#practice-word{@extend #contact-welcome;}
+#service-call-to-acton{@extend #btn-submit}
+#contactus-call-to-action{@extend #service-call-to-acton;}
+#footer-grid{@include alignment-justify(grid, center);}
+#required{color: $golden;}
+#icon{@extend #logo;
+       @extend #home-card;
+}
+
+
+//service grid
+#services-grid{
+    @include shadow;
+    border-radius: 10px;
+    background-color: $smoke;
+
+}
+#services-grid-title{
+    text-align: center;
+}
+#Subscribe-btn{@extend #btn-call;}
+#copyright-text{
+    @include alignment-justify(grid, center);
+}
+#about-text-banner{
+    color: $gold;
+}
+
+
+//about-us
+#navy-text{color: $navy;}
+#smoke-background{background-color: $smoke;}
+#about-values-content{
+    text-align: center;
+}
+#about-icon{
+    @include alignment-justify(grid, center)
+}
+#alias-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $navy;
+    @include shadow;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+#icon-index{
+    @extend #alias-name;
+}
+
+#qualities{
+    text-align: center;
+}
+
+
+#sidebar{
+      left: 0;
+      top: 0;
+      height: 100vh;
+      min-width: 70px;
+      background-color: $navy;
+      position: fixed;
+}
+#linkicons{
+         transition:0.3s ease-in-out;
+        &:hover{
+              transform:translate(0, -5px);
+              box-shadow: $shadow-color;
+        }
+}

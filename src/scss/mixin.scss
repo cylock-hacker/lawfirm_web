@@ -1,0 +1,49 @@
+@import "variables";
+
+
+
+@mixin shadow{
+    box-shadow: 0px 0px 10px $shadow-color;
+}
+
+@mixin shape($width, $height, $color,){
+    width:$width;
+    height:$height;
+    color:$color;
+}
+@mixin alignment-justify($type, $direction){
+    display: $type;
+    justify-content: $direction;
+}
+
+@mixin banner-background($image_url){
+    min-height: 550px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 13, 29, 0.95) 0%,
+            rgba(3, 13, 29, 0.65) 40%,
+            rgba(3, 13, 29, 0.1) 100%
+        ),
+        url($image_url);
+
+    background-size: cover;
+    background-position: center right;
+}
+
+@mixin background-attractor($image_url) {
+    min-height: 300px;
+
+    background-image:
+        linear-gradient(
+            rgba(3, 13, 29, 0.65),
+            rgba(3, 13, 29, 0.65)
+        ),
+        url($image_url);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 0;
+}
